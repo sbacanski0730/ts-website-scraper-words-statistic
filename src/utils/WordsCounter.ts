@@ -1,4 +1,4 @@
-class StatisticProvider {
+class WordsCounter {
 	private _pageBody: String;
 	private _wordsSet: Set<string> = new Set();
 	private _countedWords: Map<string, number> = new Map();
@@ -29,4 +29,4 @@ class StatisticProvider {
 	}
 }
 
-export default StatisticProvider;
+export default WordsCounter;

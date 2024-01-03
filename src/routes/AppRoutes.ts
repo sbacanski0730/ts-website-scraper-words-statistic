@@ -8,7 +8,9 @@ class Routes {
 	public insertRoutes(app: Application) {
 		app.route('/example-page').get(this.appController.giveExampleWebPage);
 
-		app.route('/statistics').post(this.appController.scrapAndStat);
+		app.route('/statistics').post(this.appController.countWords);
+
+		app.route('/statistics-and-report').post(this.appController.countWordsAndReport);
 	}
 }
 
